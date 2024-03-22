@@ -1,0 +1,80 @@
+body {
+  background: #fff2f2;
+  font-family: "Roboto Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.background {
+  background-image: url("./assets/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.textstrock {
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+.backgroundForm {
+  background-image: url("./assets/river-background-oe0xqby9gmvno6o2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product {
+  background-image: url("./assets/detailsimg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.serviceImg {
+  background-image: url("./assets/service.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.animat::after {
+  content: "";
+  animation: changeText 3s infinite;
+  transition: ease-in-out;
+}
+@keyframes changeText {
+  0% {
+    content: "Charm";
+  }
+  50% {
+    content: "Activity";
+  }
+  100% {
+    content: "View";
+  }
+}
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+  .section1 {
+    background-size: cover;
+  }
+}
+
+/* Small devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .section1 {
+    background-size: cover;
+  }
+  .brand span {
+    width: 11rem;
+    font-size: 2rem;
+    padding: 0px 16px 2px 16px;
+    border-radius: 20px;
+    background: rgb(41, 41, 41);
+    color: #f9dd6dcf;
+  }
+}
+/* Medium devices (laptops) */
+@media (min-width: 769px) and (max-width: 992px) {
+  .section1 {
+    background-size: cover;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 993px) and (max-width: 1200px) {
+}
