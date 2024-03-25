@@ -11,8 +11,8 @@ const Home = () => {
     return (
         <div >
             <section className=" flex justify-center items-center">
-                <div className=" w-[95%] h-[80vh]  bg-gray-600  rounded-[1rem] bg-center bg-no-repeat tracking-[3px] background mb-20 mt-28 shadow-2xl">
-                    <article className=' text-white flex flex-col justify-center text-center w-auto h-full p-3 bg-black/10'>
+                <div className=" w-[95%] h-[80vh]  rounded-[1rem] background bg-center bg-no-repeat tracking-[3px]  mb-20  mt-28 shadow-2xl">
+                    <article className=' text-white flex flex-col justify-center text-center w-auto h-full p-3 '>
                         <section className=" ">
                             <div className='w-auto flex justify-center flex-col gap-0 text-[2rem]'>
                                 <h1 className='text-[52px] tracking-wide font-semibold'>Extraordinary natural and <br /> Cultural
