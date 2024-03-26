@@ -1,6 +1,9 @@
 import React from 'react'
 import CardServices from './CardServices'
-
+import support from "../assets/technical-support.png";
+import heath from "../assets/healthcare.png"
+import hotels from '../assets/skyscraper.png'
+// import { services } from '../assets/data'
 const Service = () => {
     return (
         <div className='w-full flex justify-center items-center'>
@@ -10,13 +13,25 @@ const Service = () => {
                 </h1>
                 <div className='w-80% flex flex-row justify-center items-center flex-wrap gap-6'>
                     <article>
-                        <CardServices />
+                        <CardServices
+                            icons={support}
+                            title={"24/7 Support"}
+                            desc={"Travel the World with Global Peace of Mind. Buy Your Plan Today from IMG® - Official Site. Get Quotes & Compare IMG Insurance Plans To Protect Your Health & Trip Costs"}
+                        />
                     </article>
                     <article>
-                        <CardServices />
+                        <CardServices
+                            icons={hotels}
+                            title={"Best Star Hotels"}
+                            desc={"Travel the World with Global Peace of Mind. Buy Your Plan Today from IMG® - Official Site. Get Quotes & Compare IMG Insurance Plans To Protect Your Health & Trip Costs"}
+                        />
                     </article>
                     <article>
-                        <CardServices />
+                        <CardServices
+                            icons={heath}
+                            title={"Safty and Care"}
+                            desc={"Travel the World with Global Peace of Mind. Buy Your Plan Today from IMG® - Official Site. Get Quotes & Compare IMG Insurance Plans To Protect Your Health & Trip Costs"}
+                        />
                     </article>
 
                 </div>

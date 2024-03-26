@@ -25,7 +25,7 @@ const Home = () => {
                         <section className=" flex justify-center flex-col flex-wrap items-center gap-[20px]">
 
                             <div className=" mt-[3rem]">
-                                <button className='text-black py-[6px] px-[2rem] md:py-2 md:px-6 rounded-xl bg-[#eccf5be3]'>
+                                <button className='text-black py-[6px] px-[2rem] md:py-2 md:px-6 rounded-xl bg-[#eccf5be3] hover:-translate-y-2 transition-all ease-in-out'>
                                     EXPLORE
                                 </button>
                             </div>
@@ -34,7 +34,7 @@ const Home = () => {
                     <div className=' w-[95%]  relative -top-8 flex justify-center gap-6'>
                         {
                             exprence.map((item) => (
-                                <div key={item.id} className='bg-gray-200  border-[2px] border-[#dddddd]  py-2 w-40 rounded-xl flex justify-center items-center flex-col'>
+                                <div key={item.id} className='bg-gray-200  border-[2px] border-[#dddddd] hover:-translate-y-1 transition-all ease-in-out  py-2 w-40 rounded-xl flex justify-center items-center flex-col'>
                                     < h1 className=' tracking-wide font-semibold text-[22px]' > {item.number}</h1>
                                     <span className=' tracking-wide font-extralight text-[12px] text-black'>
                                         {item.text}

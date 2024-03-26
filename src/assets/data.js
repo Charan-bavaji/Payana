@@ -1,4 +1,5 @@
 
+const img = "./romatic.png"
 const exprence = [
     {
         id: 1,
@@ -38,7 +39,7 @@ const packages = [
         date: "26Augst to 29-Augst",
         packName: "Bandipura Bliss Safari Package",
         prize: "199",
-        img: "https://lh3.googleusercontent.com/proxy/oQ1A2-7A04W_DdI7qqUB9askyurbPlv78EkS97LE1AooxwO1XAQoYLiIeaXnG7QZO8fyT5EdFvpfTcfFHpH4YGta4R9gjJ61gBblKAti00mYjjtnCU9Nqm8"
+        img: "https://lh3.googleusercontent.com/proxy/e_C59oDUTNrHCvSJHx2eZkaC-GaMZ_2DRK2XCbRTcqiELn_9MU2VlsOV5dHp-RZG8AFWAla1FpwkQl5DFtkuRchkTkeOVOkAAYXRbVUYV5EX6_ofZStNi0c"
     },
     {
         id: 3,
@@ -95,4 +96,5 @@ const packages = [
         img: "https://cdn.kimkim.com/files/a/images/135184421db2fcc309bf34131a06929fd19331f5/original-2c9df6ee0a8bec6d7b5b2995de18d97d.jpg"
     }
 ]
-export { exprence, packages };
+
+export { exprence, packages, };
