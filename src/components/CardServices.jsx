@@ -4,8 +4,8 @@ const CardServices = (props) => {
 
     return (
         <div>
-            <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
-                <div className="relative mx-4 flex justify-center items-center -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
+            <div className="relative flex w-80 flex-col rounded-xl bg-slate-50 border-x-2 bg-clip-border text-gray-700 shadow-md">
+                <div className="relative mx-4 flex justify-center items-center bg-slate-50 border-x-2 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
                     <img src={props.icons} alt="images" width={100} />
                 </div>
                 <div className="p-6">
