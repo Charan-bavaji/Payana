@@ -39,7 +39,7 @@ const packages = [
         date: "26Augst to 29-Augst",
         packName: "Bandipura Bliss Safari Package",
         prize: "199",
-        img: "https://lh3.googleusercontent.com/proxy/e_C59oDUTNrHCvSJHx2eZkaC-GaMZ_2DRK2XCbRTcqiELn_9MU2VlsOV5dHp-RZG8AFWAla1FpwkQl5DFtkuRchkTkeOVOkAAYXRbVUYV5EX6_ofZStNi0c"
+        img: "https://www.conservationindia.org/wp-content/files_mf/1369800861BlackPanther_PhillipRossCI1.jpg"
     },
     {
         id: 3,
