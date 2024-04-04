@@ -3,8 +3,28 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import "../styles/loginReg.css";
 const Login = () => {
+    const navigate = useNavigate();
     const [email, setEmail] = useState("");
     const [password, setpassword] = useState("");
+    const handleEmail = (event) => {
+        setEmail(event.target.value);
+    }
+    const handlePassword = (e) => {
+        setpassword(e.target.value);
+    }
+    const handleValidation = () => {
+        const admin = "admin@gmail.com";
+        const validPassword = 987654321;
+        if (admin == email && validPassword == password) {
+            navigate("/");
+            alert("Successfully Registered");
+        } else if (validPassword < 8) {
+            alert("pssword should be more the 8 chare")
+        } else {
+            alert("enter a correct email or password")
+        }
+    }
+
     return (
         <div className='Container'>
             <div id='wrap1'>
@@ -20,23 +40,21 @@ const Login = () => {
                 </div>
                 <div className='autContainer'>
                     <div>
-                        <span>Your Email </span>
+                        <span className='flex'>Your Email </span>
                         <input type="email"
-                            placeholder='email'
-                            // value={email}
-                            onChange={(e) => {
-                                setEmail(e.target.value)
-                            }}
                             required
+                            placeholder='email'
+                            value={email}
+                            onChange={(e) => handleEmail(e)}
                         />
                     </div>
                     <div>
                         <span>Password</span>
                         <input type='password'
                             placeholder='password'
-                            // value={password}
+                            value={password}
                             onChange={(e) => {
-                                setpassword(e.target.value)
+                                handlePassword(e)
                             }}
                             required
                         />
@@ -44,10 +62,11 @@ const Login = () => {
                 </div>
                 <div className='submit'>
                     <button id='loginbut'
+                        onClick={() => handleValidation()}
                     >Login
                     </button>
                     {/* <Link > */}
-                    <span>Forgot password ?</span>
+                    <span className=' cursor-pointer' onClick={() => alert("admin@gmail.com, 987654321")}>admin@gmail.com <p>987654321</p></span>
                     {/* </Link> */}
                 </div>
                 <div className='socialBut'>
@@ -55,7 +74,6 @@ const Login = () => {
                     <button>Twitter</button>
                 </div>
             </div>
-
         </div>
     )
 }
