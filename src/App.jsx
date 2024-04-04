@@ -22,6 +22,7 @@ function App() {
   return (
     <main>
       <RouterProvider router={router}></RouterProvider>
+
       <Footer></Footer>
     </main>
   )

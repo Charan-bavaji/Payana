@@ -2,7 +2,7 @@ import React from 'react'
 import about from "../assets/about.png"
 const About = () => {
     return (
-        <div className="w-full flex flex-col justify-center items-center my-20">
+        <div className="w-full h-auto flex flex-col justify-center items-center my-20">
             <section className='w-full h-auto'>
                 <div className=' absolute left-[15%] sm:left-[20%]'>
                     <h1 className='text-[1.5rem] sm:text-[2rem] md:text-[4rem]'>About our community</h1>

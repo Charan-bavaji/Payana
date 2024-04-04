@@ -3,7 +3,7 @@ import SocialMedia from './SocialMedia';
 
 const Footer = () => {
     return (
-        <div className=' flex justify-center items-center'>
+        <div className=' flex justify-center items-center mt-[80rem]'>
             <section className=' text-cyan-50 tracking-normal  w-full h-auto py-6 flex bg-[#1a1a1a] mt-[1rem] bg-center bg-no-repeat'>
                 <article className=' w-[50%] flex justify-center items-center gap-10'>
                     <div className=''>
