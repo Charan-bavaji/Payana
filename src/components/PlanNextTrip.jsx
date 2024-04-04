@@ -21,8 +21,8 @@ const PlanNextTrip = () => {
 
     }
     return (
-        <div className="w-full flex flex-col justify-center items-center my-20">
-            <section className=' w-[90%] flex justify-center items-center flex-col'>
+        <div className="w-[95%] flex flex-col justify-center items-center my-20">
+            <section className='w-[90%] flex justify-center items-center flex-col'>
                 <div className='flex justify-center items-center '>
                     <h1 className='p-5 text-[2rem] text-Black'>
                         Plan Your Next Trip
@@ -30,14 +30,14 @@ const PlanNextTrip = () => {
                     <img src={titleImg} alt="img" className=' size-14' />
                 </div>
                 <section className='w-full h-[60vh] bg-slate-600 bgcolor mt-4'>
-                    <div className='absolute left-52'>
-                        <h1 className='text-[18rem] opacity-5'>PAYANA</h1>
+                    <div className='absolute left-7 top-[150%] md:left-52'>
+                        <h1 className='  text-[5rem] md:text-[18rem] opacity-5'>PAYANA</h1>
                     </div>
                     <div className='relative w-full h-full flex justify-center flex-wrap items-center'>
-                        <div className='w-[30%] h-full flex justify-end items-center'>
-                            <h1 className='text-[5rem] -rotate-90'>PAYANA</h1>
+                        <div className=' hidden w-[30%] h-full sm:flex justify-end items-center'>
+                            <h1 className=' md:text-[5rem] -rotate-90'>PAYANA</h1>
                         </div>
-                        <div className='w-[70%] h-full'>
+                        <div className='w-full sm:w-[70%] h-full'>
                             <form action="" className='p-10 mt-5'>
                                 <Options name={from.name} options={from.options} />
                                 <Options name={to.name} options={to.options} />

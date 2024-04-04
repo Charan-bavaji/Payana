@@ -1,4 +1,5 @@
 import React from 'react'
+import SocialMedia from './SocialMedia';
 
 const Footer = () => {
     return (
@@ -36,7 +37,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </article>
-                <article className='w-[50%] flex flex-col gap-2'>
+                <article className='w-[50%] flex flex-col justify-start items-start gap-2'>
                     <h1 className='text-3xl'>
                         Newsletter
                     </h1>
@@ -48,6 +49,9 @@ const Footer = () => {
                     <div className="mt-1 w-[24rem] flex gap-2">
                         <input id="email" placeholder='Enter your email' required name="email" type="email" autoComplete="email" maxLength={30} className=" px-4 block w-full rounded-md border-0 py-1.5 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset sm:text-sm sm:leading-6" />
                         <button className='border-[1px] px-6 rounded-lg'>Submit</button>
+                    </div>
+                    <div className='py-5'>
+                        <SocialMedia></SocialMedia>
                     </div>
                 </article>
             </section>
