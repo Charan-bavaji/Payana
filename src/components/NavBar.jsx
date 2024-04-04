@@ -21,7 +21,7 @@ const NavBar = () => {
     }
     return (
         <>
-            <div className="w-full h-24 flex justify-center items-center bg-inherit z-50 fixed ">
+            <div className="w-full h-24 flex justify-center items-center bg-inherit z-50  ">
                 <div className="w-[25rem] md:w-[45rem] h-16 backdrop-blur-sm bg-black/10 flex justify-between items-center rounded-full">
                     <div className=" p-3 m-1 md:hidden flex justify-center items-center">
                         <span className="material-symbols-outlined rounded-full p-1.5 text-black hover:bg-slate-400 cursor-pointer transition duration-150 ease-in-out hover:-translate-y-2"

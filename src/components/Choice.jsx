@@ -29,11 +29,11 @@ const Choice = () => {
 
     return (
         <div className='w-full flex justify-center items-center my-10 '>
-            <div className=" w-[55%] h-auto flex justify-center items-center bg-slate-200 flex-col gap-5 text-white mt-[1rem] rounded-[1rem] bg-center bg-no-repeat tracking-[3px] md:flex-row">
+            <div className=" sm:w-[80%] lg:w-[55%]  h-auto flex justify-center items-center bg-slate-200 flex-col gap-5 text-white mt-[1rem] rounded-[1rem] bg-center bg-no-repeat tracking-[3px] md:flex-row">
                 <section className='w-[50%] h-[50%] m-2'>
                     <img src={choise} alt="" width={400} className='rounded-2xl' />
                 </section>
-                <section className='w-[50%] h-auto  m-2 flex justify-center items-center flex-col rounded-4xl text-black'>
+                <section className='sm:w-[70%] md:w-[50%] h-auto  m-2 flex justify-center items-center flex-col rounded-4xl text-black'>
                     <h1 className='p-6 font-semibold text-[34px]'>Contact</h1>
                     <div className="border-b border-gray-900/10 pb-5">
                         <div className="mt-0 grid grid-cols-1 sm:grid-cols-6">
@@ -73,7 +73,7 @@ const Choice = () => {
                                 </div>
                             </div>
 
-                            <div className="col-span-full p-1">
+                            <div className="col-span-full p-1 pb-7">
                                 <label htmlFor="street-address" className="block text-sm font-medium leading-6">Description</label>
                                 <div className="mt-2">
                                     <textarea name="street-address" onChange={handleChangeDesc} id="street-address" maxLength={200} autoComplete="street-address" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />

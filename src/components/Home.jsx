@@ -14,7 +14,7 @@ Products
 const Home = () => {
     return (
         <div >
-            <div className='fixed top-0 left-0 right-0 z-50'>
+            <div className=' top-0 left-0 right-0 z-50 fixed'>
                 <NavBar></NavBar>
             </div>
             <section className=" w-full flex justify-center items-center">
@@ -38,17 +38,19 @@ const Home = () => {
                             </div>
                         </section>
                     </article>
-                    <div className=' w-[95%]  relative -top-8 flex justify-center gap-6'>
-                        {
-                            exprence.map((item) => (
-                                <div key={item.id} className='bg-gray-200  border-[2px] border-[#dddddd] hover:-translate-y-1 transition-all ease-in-out sm:py-2 sm:w-40 rounded-xl flex justify-center items-center flex-col'>
-                                    < h1 className=' tracking-wide font-semibold text-[22px]' > {item.number}</h1>
-                                    <span className=' tracking-wide font-extralight text-[12px] text-black'>
-                                        {item.text}
-                                    </span>
-                                </div>
-                            ))
-                        }
+                    <div className=' w-full  relative -top-8 flex justify-center items-center gap-6'>
+                        <div className='flex gap-2'>
+                            {
+                                exprence.map((item) => (
+                                    <div key={item.id} className='bg-gray-200  border-[2px] border-[#dddddd] text-center hover:-translate-y-1 transition-all ease-in-out w-20 sm:py-2  sm:w-40 rounded-xl flex justify-center items-center flex-col'>
+                                        < h1 className=' tracking-wide font-semibold sm:text-[22px]' > {item.number}</h1>
+                                        <span className=' tracking-wide font-extralight text-[14px] sm:text-[12px] text-black'>
+                                            {item.text}
+                                        </span>
+                                    </div>
+                                ))
+                            }
+                        </div>
                     </div>
                 </div >
             </section >
