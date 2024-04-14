@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Options = ({ name, options }) => {
+
     return (
         <div className=' border-b-2 border-gray-400 md:w-[60%] flex pb-3 pt-4 text-gray-600 '>
             <label htmlFor="from" className='w-[10%] text-gray-900 font-semibold'>{name}</label>

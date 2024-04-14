@@ -39,7 +39,7 @@ const PlanNextTrip = () => {
                         </div>
                         <div className='w-full sm:w-[70%] h-full'>
                             <form action="" className='p-10 mt-5'>
-                                <Options name={from.name} options={from.options} />
+                                <Options name={from.name} options={from.options}/>
                                 <Options name={to.name} options={to.options} />
                                 <Options name={days.name} options={days.options} />
                                 <div className=' border-b-2 border-gray-400 w-[60%] flex flex-wrap pb-3 pt-4 gap-1 text-gray-600  '>
@@ -49,6 +49,9 @@ const PlanNextTrip = () => {
                                     <input type='date' className='sm:w-[35%] bg-transparent' />
                                 </div>
                                 <Options name={class1.name} options={class1.options} />
+                                <div className='p-5  '>
+                                    <input type='submit' onClick={(e) => handleSubmit(e)} />
+                                </div>
                             </form>
                         </div>
                     </div>
