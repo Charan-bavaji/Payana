@@ -26,7 +26,7 @@ const Home = () => {
                                     <span className='animat text-[30px]  pb-[2px] pr-[16px] pl-[16px] rounded-lg bg-gray-900  text-[#eccf5be3]'></span>
                                 </h1>
                                 {/* <h1 className='pb-[2px] pr-[16px] pl-[16px] rounded-lg bg-gray-900  text-[#eccf5be3]'>XYZ</h1> */}
-                                <span className='tracking-normal text-[16px]'>Lorem ipsum dolor sit amet b. Eos quas consectetur aperia</span>
+                                <span className='tracking-normal text-[16px]'>Adventure is a form of self care.</span>
                             </div>
                         </section>
                         <section className=" flex justify-center flex-col flex-wrap items-center gap-[20px]">

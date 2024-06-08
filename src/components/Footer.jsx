@@ -42,8 +42,8 @@ const Footer = () => {
                         Newsletter
                     </h1>
                     <span className='text-sm text-gray-400'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing  <br />
-                        bLorem consectetur adipisicing
+                        Get updated news from payana  <br />
+                        please Subscribe
                     </span>
                     {/* <input type="email" name="" id="" placeholder='Enter your email' /> */}
                     <div className="mt-1 w-[24rem] flex gap-2">
